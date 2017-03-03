@@ -162,6 +162,7 @@ module RubyXL
   end
 
   class ActiveX < GenericStorageObject
+    CONTENT_TYPE = 'application/vnd.ms-excel.sheet.macronEnabled.12'
     REL_TYPE     = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships/control'
 
     include RubyXL::RelationshipSupport

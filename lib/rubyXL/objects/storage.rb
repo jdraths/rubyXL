@@ -162,7 +162,7 @@ module RubyXL
   end
 
   class ActiveX < GenericStorageObject
-    CONTENT_TYPE = 'application/vnd.ms-office.vbaProject'
+    CONTENT_TYPE = 'application/vnd.ms-office.activeX+xml'
     REL_TYPE     = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships/control'
 
     include RubyXL::RelationshipSupport
@@ -177,6 +177,7 @@ module RubyXL
   end
 
   class ActiveXBinary < GenericStorageObject
+    CONTENT_TYPE = 'application/vnd.ms-office.activeX'
     REL_TYPE     = 'http://schemas.microsoft.com/office/2006/relationships/activeXControlBinary'
   end
 

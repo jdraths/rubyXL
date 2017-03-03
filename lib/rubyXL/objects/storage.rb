@@ -169,6 +169,7 @@ module RubyXL
 
     def attach_relationship(rid, rf)
       case rf
+      when RubyXL::ActiveX        then store_relationship(rf) # TODO
       when RubyXL::ActiveXBinary       then store_relationship(rf) # TODO
       else store_relationship(rf, :unknown)
       end
